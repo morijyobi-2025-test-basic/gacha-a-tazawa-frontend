@@ -1,6 +1,6 @@
-const Button = () => {
+const Button = ({handleClick}) => {
   return (
-    <div>button</div>
+    <div onClick={handleClick}>ガチャを回す</div>
   )
 }
 
