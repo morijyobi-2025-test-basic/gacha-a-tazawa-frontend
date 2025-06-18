@@ -1,6 +1,6 @@
 const Button = ({handleClick}) => {
   return (
-    <div onClick={handleClick}>ガチャを回す</div>
+    <button onClick={handleClick}>ガチャを回す</button>
   )
 }
 
