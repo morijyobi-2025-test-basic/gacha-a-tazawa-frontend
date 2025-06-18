@@ -1,6 +1,6 @@
-const Result = () => {
+const Result = ({result}) => {
   return (
-    <div>result</div>
+    <div>{result.result}</div>
   )
 }
 
