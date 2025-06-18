@@ -5,10 +5,10 @@ import Button from "./components/Button"
 function App() {
   const [result, setResult] = useState({"result": "X"})
 
-  const handleClick = () => {
-    setResult({
-      "result": "Y"
-    })
+  const handleClick = async () => {
+    const responce = await fetch("http://localhost:3000/gacha")
+    const data = await responce.json()
+    setResult(data)
   };
 
   return (
